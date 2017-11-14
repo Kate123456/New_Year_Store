@@ -7,29 +7,47 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://code.jquery.com/jquery-3.2.1.js" defer></script>
-
-
-
-<script type="text/javascript"> 
-imageDir = "http://mvcreative.ru/example/6/2/snow/"; 
-sflakesMax = 65; 
-sflakesMaxActive = 65; 
-svMaxX = 2; 
-svMaxY = 6; 
-ssnowStick = 1; 
-ssnowCollect = 0; 
-sfollowMouse = 1; 
-sflakeBottom = 0; 
-susePNG = 1; 
-sflakeTypes = 5; 
-sflakeWidth = 15; 
-sflakeHeight = 15; 
-</script> 
-<script type="text/javascript" src="http://mvcreative.ru/example/6/2/snow.js"></script>
-
-
-
+    <script type="text/javascript">
+    imageDir = "http://mvcreative.ru/example/6/2/snow/";
+    sflakesMax = 65;
+    sflakesMaxActive = 65;
+    svMaxX = 2;
+    svMaxY = 6;
+    ssnowStick = 1;
+    ssnowCollect = 0;
+    sfollowMouse = 1;
+    sflakeBottom = 0;
+    susePNG = 1;
+    sflakeTypes = 5;
+    sflakeWidth = 15;
+    sflakeHeight = 15;
+    </script>
+    <script type="text/javascript" src="http://mvcreative.ru/example/6/2/snow.js"></script>
 </head>
+
+
+<div>
+  <div id="cart" class="cart"></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 <body>
     <header>
@@ -40,11 +58,40 @@ sflakeHeight = 15;
     </aside>
     <section id="main">
         <div id="head_product">Products</div>
+
+         <input type="image" src="img/cartNew.jpg"  class="cart" id="cart">
+         
+         </input>
+
         <div id="single_product"></div>
+        <!-- for cart -->
+        <div id="Cart">
 
-<!-- for cart -->
-
-<div class="item_box">
+            <div class="CartProduct">
+                <span class="CartProdName"></span>
+                <img src="img/2.jpg" alt="soya milk">
+                <span class="CartProdPrice">01</span>
+                <span class="TotalItemPrice">Total01</span>
+            </div>
+            <div class="CartProduct">
+                <span class="CartProdName">ProdName2</span>
+                <img src="img/apples.jpg" alt="apple">
+                <span class="CartProdPrice">02</span>
+                <span class="TotalItemPrice">Total01</span>
+            </div>
+            <div class="CartProduct">
+                <span class="CartProdName">ProdName3</span>
+                <img src="img/apples.jpg" alt="apple">
+                <span class="CartProdPrice">03</span>
+                <span class="TotalItemPrice">Total01</span>
+            </div>
+            <div class="CartProduct">
+                <span class="CartProdName">ProdName4</span>
+                <img src="img/apples.jpg" alt="apple">
+                <span class="CartProdPrice">04</span>
+                <span class="TotalItemPrice">Total01</span>
+            </div>
+            <!-- div class="item_box">
   <h3 class="item_title">apples</h3>
   <p>Price: <span class="item_price">20</span>$</p>
   <button class="add_item" data-id="7">Add to cart</button>
@@ -58,40 +105,47 @@ sflakeHeight = 15;
   <h3 class="item_title">Oxfords</h3>
   <p>Price: <span class="item_price">2300</span>$</p>
   <button class="add_item" data-id="5">Add to cart</button>
-</div>
-<button id="checkout">Checkout</button>
-<button id="clear_cart">Clean the cart</button>
-<div id="cart_content"></div>
-
-
-        <!--  <div id="Products">
+</div> -->
+        </div>
+        <button id="checkout">Checkout</button>
+        <button id="clear_cart">Clean the cart</button>
+        <div id="cart_content"></div>
+        <!-- for cart -->
+        <div id="Products">
             <div class="product">
                 <div class="name_product">Apples</div>
                 <img src="img/apples.jpg" alt="error">
                 <div class="price">25</div>
                 <button>Buy</button>
             </div>
-             <div class="product">
+            <div class="product">
                 <div class="name_product">Apples</div>
                 <img src="img/apples.jpg" alt="error">
                 <div class="price">25</div>
                 <button>Buy</button>
             </div>
-             <div class="product">
+            <div class="product">
                 <div class="name_product">Apples</div>
                 <img src="img/apples.jpg" alt="error">
                 <div class="price">25</div>
                 <button>Buy</button>
             </div>
-             <div class="product">
+            <div class="product">
                 <div class="name_product">Apples</div>
                 <img src="img/apples.jpg" alt="error">
                 <div class="price">25</div>
-                <button>Buy</boductutton>
+                <button>Buy</button>
             </div>
-        </div>  -->
+        </div>
     </section>
-    <footer></footer>
+    <div id="modal_form">
+        <!-- Сaмo oкнo -->
+        <span id="modal_close">X</span>
+        <!-- Кнoпкa зaкрыть -->
+        <!-- Тут любoе сoдержимoе -->
+    </div>
+    <div id="overlay"></div>
+    <!-- Пoдлoжкa -->
     <script src="js/objects/category.js" defer></script>
     <script src="js/objects/product.js" defer></script>
     <script src="js/objects/cart.js" defer></script>
